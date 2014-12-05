@@ -1,8 +1,8 @@
 === Contact Form 7 Campaign Monitor Extension ===
 Contributors: Renzo Johnson
 Tags: campaign monitor, contact, form, contact form, email, mailing list
-Requires at least: 3.9
-Tested up to: 4.0
+Requires at least: 4.0
+Tested up to: 4.0.1
 Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,7 +41,7 @@ Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? 
 
 For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
-= 0.1.2 =
+= 0.1.3 =
 
 * Release version
 
