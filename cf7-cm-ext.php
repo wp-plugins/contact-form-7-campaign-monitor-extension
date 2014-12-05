@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Contact Form 7 Campaign Monitor Extension
-Plugin URI: http://renzojohnson.com/contact-form-7-campaign-monitor-extension
+Plugin URI: http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension
 Description: Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissions to predetermined lists in Campaign Monitor, using its latest API.
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com
