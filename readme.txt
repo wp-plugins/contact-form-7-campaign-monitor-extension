@@ -7,7 +7,7 @@ Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple way to integrate Contact Form 7 and Campaign Monitor.
+Simple way to integrate Campaign Monitor mailing lists to Contact Form 7.
 
 == Description ==
 
@@ -17,9 +17,16 @@ Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissio
 = Features =
 
 * Easy to use
-* Use a different mailing list per form
+* Use a different mailing list per contact form
 * Latest Campaign Monitor API
 * Constantly updated
+
+
+= Plugin Needs Your Support =
+
+Please consider [__making a donation__](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension). Your donation will help encourage and support the plugin's continued development and better user support.
+
+
 
 == Installation ==
 
