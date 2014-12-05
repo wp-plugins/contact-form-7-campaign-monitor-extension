@@ -35,8 +35,7 @@ Please consider [__making a donation__](http://renzojohnson.com/contributions/co
 
 You will find 'Campaign Monitor: Subscriber List Details' menu in your contact from 7 editor.
 
-For basic usage, you can also have a look at the [Extension homepage](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
-For Contact Form 7, you can also have a look at the [plugin homepage](http://contactform7.com/).
+For basic usage, you can also have a look at the [Extension homepage](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension), you can also have a look at the [Contact Form 7 homepage](http://contactform7.com/).
 
 == Frequently Asked Questions ==
 
