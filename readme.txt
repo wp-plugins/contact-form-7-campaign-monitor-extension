@@ -11,15 +11,22 @@ Simple way to integrate Campaign Monitor mailing lists to Contact Form 7.
 
 == Description ==
 
-Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissions to predetermined lists in Campaign Monitor, using its latest API.
+Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissions to predetermined lists in Campaign Monitor, using its latest API. Contact Form 7 Campaign Monitor Extension supports multiple mailing lists and API Keys.
 
 
 = Features =
 
 * Easy to use
 * Use a different mailing list per contact form
+* Support for custom fields
 * Latest Campaign Monitor API
 * Constantly updated
+
+= Rrequirements =
+
+1. Self hosted WordPress.org installation
+2. Contact Form 7 plugin (4.0 or higher)
+3. Campaign Monitor account
 
 
 = Plugin Needs Your Support =
