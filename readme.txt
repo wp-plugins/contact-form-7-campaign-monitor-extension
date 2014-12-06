@@ -8,7 +8,7 @@ Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple way to integrate Campaign Monitor mailing lists to Contact Form 7. Stop saving subscribers in your database, save them in a proper mailing list instead!
+Simple way to integrate Campaign Monitor mailing lists to Contact Form 7. Save your subscribers in a proper mailing list.
 
 == Description ==
 
