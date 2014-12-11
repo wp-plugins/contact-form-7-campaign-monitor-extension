@@ -72,3 +72,7 @@ For more information, see [Releases](http://renzojohnson.com/contributions/conta
 = 0.1.5 =
 
 * Updated documentation
+
+= 0.1.6 =
+
+* Help button added

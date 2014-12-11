@@ -1,6 +1,6 @@
 <?php
 
-define( 'WPCF7_SPARTAN_VERSION', '0.1.2' );
+define( 'WPCF7_SPARTAN_VERSION', '0.1.6' );
 
 if ( ! defined( 'WPCF7_SPARTAN_PLUGIN_BASENAME' ) )
 	define( 'WPCF7_SPARTAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -14,7 +14,7 @@ add_action( 'wpcf7_after_save', 'wpcf7_cm_save_campaignmonitor' );
 
 function add_cm_meta () {
 	if ( wpcf7_admin_has_edit_cap() ) {
-		add_meta_box( 'cf7cmdiv', __( 'Campaign Monitor: Subscriber List Details', 'wpcf7' ),
+		add_meta_box( 'cf7cmdiv', __( 'Campaign Monitor: Subscriber List Details <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-hand" target="_blank">Need Help?</a>', 'wpcf7' ),
 			'wpcf7_cm_add_campaignmonitor', 'cfseven', 'cf7_cm', 'core',
 			array(
 				'id' => 'wpcf7-cf7',
