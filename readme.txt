@@ -2,8 +2,8 @@
 Contributors: Renzo Johnson
 Donate link: http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension
 Tags: campaign monitor, contact, form, contact form, email, mailing list, createsend
-Requires at least: 4.0
-Tested up to: 4.0.1
+Requires at least: 3.9
+Tested up to: 4.2
 Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,7 @@ Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissio
 
 = Requirements =
 
-1. Self hosted WordPress.org installation
+1. Self hosted WordPress.org installation (3.9 or higher)
 2. Contact Form 7 (4.0 or higher)
 3. Campaign Monitor account
 
