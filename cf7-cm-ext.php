@@ -27,6 +27,6 @@ Version: 0.1.6
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'lib/funtions.php');
+require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'lib/functions.php');
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'lib/enqueue.php');
 
