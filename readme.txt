@@ -30,9 +30,9 @@ Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissio
 3. Campaign Monitor account
 
 
-= CF7 Campaign Monitor Extension Needs Your Support =
+= Leave a Comment or a Review =
 
-Please consider [__making a donation__](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension). Your donation will help encourage and support the plugin's continued development and better user support.
+If this plugin is useful to you, please leave a review here: [Extension Review Page](https://wordpress.org/support/view/plugin-reviews/contact-form-7-campaign-monitor-extension) Or Leave a comment here: [Extension comments page]((http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 
 
 
