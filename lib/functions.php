@@ -56,12 +56,12 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 	<div class="half-right">
 		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'API Key:', 'wpcf7' ) ); ?></label><br />
+		<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?></label><br />
 		<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['api'] ); ?>" />
 		</div>
 
 		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'List ID:', 'wpcf7' ) ); ?></label><br />
+		<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?></label><br />
 		<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['list'] ); ?>" />
 		</div>
 
