@@ -202,6 +202,31 @@ function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 	return $subject;
 }
 
+
+add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
+function cme_ext_author_form_class_attr( $class ) {
+
+  $class .= ' mailChimpExt';
+  return $class;
+
+}
+
+
+add_filter('wpcf7_form_elements', 'cme_ext_author_wpcf7');
+function cme_ext_author_wpcf7($ext_author) {
+
+  $author .= '<div class="wpcf7-display-none">'. "\n";
+  $author .= 'Contact form 7 extended by '. "\n";
+  $author .= '<a href="http://renzojohnson.com" title="Web Developer: Renzo Johnson" alt="Web Developer: Renzo Johnson" target="_blank">Renzo Johnson</a>'. "\n";
+  $author .= '</div>'. "\n";
+
+  echo $author;
+
+  return $ext_author;
+
+}
+
+
 function wpcf7_spartan_plugin_url( $path = '' ) {
 	return plugins_url( $path, WPCF7_SPARTAN_PLUGIN_BASENAME );
 }
