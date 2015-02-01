@@ -1,6 +1,6 @@
 <?php
 
-define( 'WPCF7_SPARTAN_VERSION', '0.1.6' );
+define( 'WPCF7_SPARTAN_VERSION', '0.1.7' );
 
 if ( ! defined( 'WPCF7_SPARTAN_PLUGIN_BASENAME' ) )
 	define( 'WPCF7_SPARTAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
