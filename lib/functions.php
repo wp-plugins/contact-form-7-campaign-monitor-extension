@@ -206,7 +206,7 @@ function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
 function cme_ext_author_form_class_attr( $class ) {
 
-  $class .= ' mailChimpExt';
+  $class .= ' cmExt';
   return $class;
 
 }
