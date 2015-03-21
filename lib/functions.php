@@ -1,6 +1,9 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+// the rest of your script...
 
-define( 'WPCF7_SPARTAN_VERSION', '0.1.7' );
+define( 'WPCF7_SPARTAN_VERSION', '0.1.8' );
 
 if ( ! defined( 'WPCF7_SPARTAN_PLUGIN_BASENAME' ) )
 	define( 'WPCF7_SPARTAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -28,7 +31,7 @@ add_action( 'wpcf7_add_meta_boxes', 'add_cm_meta' );
 function show_cm_metabox($cf) {
 	do_meta_boxes( 'cfseven', 'cf7_cm', $cf );
 }
-add_action( 'wpcf7_admin_after_mail_2', 'show_cm_metabox' );
+add_action( 'wpcf7_admin_after_additional_settings', 'show_cm_metabox' );
 
 
 function wpcf7_cm_add_campaignmonitor($args) {
@@ -40,16 +43,16 @@ function wpcf7_cm_add_campaignmonitor($args) {
 	<div class="half-left">
 		<div class="mail-field">
 			<label for="wpcf7-campaignmonitor-email"><?php echo esc_html( __( 'Subscriber Email:', 'wpcf7' ) ); ?></label><br />
-			<input type="text" id="wpcf7-campaignmonitor-email" name="wpcf7-campaignmonitor[email]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['email'] ); ?>" />
+			<input type="text" id="wpcf7-campaignmonitor-email" name="wpcf7-campaignmonitor[email]" class="wide" size="70" value="<?php echo (isset ( $cf7_cm['email'] ) ) ? esc_attr( $cf7_cm['email'] ) : ''; ?>" />
 		</div>
 
 		<div class="mail-field">
 		<label for="wpcf7-campaignmonitor-name"><?php echo esc_html( __( 'Subscriber Name:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-name" name="wpcf7-campaignmonitor[name]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['name'] ); ?>" />
+		<input type="text" id="wpcf7-campaignmonitor-name" name="wpcf7-campaignmonitor[name]" class="wide" size="70" value="<?php echo (isset ($cf7_cm['name'] ) ) ? esc_attr( $cf7_cm['name'] ) : '' ; ?>" />
 		</div>
 
 		<div class="mail-field"><br/>
-		<input type="checkbox" id="wpcf7-campaignmonitor-cf-active" name="wpcf7-campaignmonitor[cfactive]" value="1"<?php echo ( $cf7_cm['cfactive'] ) ? ' checked="checked"' : ''; ?> />
+		<input type="checkbox" id="wpcf7-campaignmonitor-cf-active" name="wpcf7-campaignmonitor[cfactive]" value="1"<?php echo ( isset($cf7_cm['cfactive']) ) ? ' checked="checked"' : ''; ?> />
 		<label for="wpcf7-campaignmonitor-cfactive"><?php echo esc_html( __( 'Use Custom Fields', 'wpcf7' ) ); ?></label><br/><br/>
 		</div>
 	</div>
@@ -57,16 +60,16 @@ function wpcf7_cm_add_campaignmonitor($args) {
 	<div class="half-right">
 		<div class="mail-field">
 		<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['api'] ); ?>" />
+		<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" value="<?php echo (isset($cf7_cm['api']) ) ? esc_attr( $cf7_cm['api'] ) : ''; ?>" />
 		</div>
 
 		<div class="mail-field">
 		<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" value="<?php echo esc_attr( $cf7_cm['list'] ); ?>" />
+		<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" value="<?php echo (isset( $cf7_cm['list']) ) ?  esc_attr( $cf7_cm['list']) : '' ; ?>" />
 		</div>
 
 		<div class="mail-field"><br/>
-		<input type="checkbox" id="wpcf7-campaignmonitor-resubscribeoption" name="wpcf7-campaignmonitor[resubscribeoption]" value="1"<?php echo ( $cf7_cm['resubscribeoption'] ) ? ' checked="checked"' : ''; ?> />
+		<input type="checkbox" id="wpcf7-campaignmonitor-resubscribeoption" name="wpcf7-campaignmonitor[resubscribeoption]" value="1"<?php echo ( isset($cf7_cm['resubscribeoption']) ) ? ' checked="checked"' : ''; ?> />
 		<label for="wpcf7-campaignmonitor-resubscribeoption"><?php echo esc_html( __( 'Allow Users to Resubscribe after being Deleted or Unsubscribed? (checked = true)', 'wpcf7' ) ); ?></label><br/><br/>
 		</div>
 	</div>
@@ -206,7 +209,7 @@ function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
 function cme_ext_author_form_class_attr( $class ) {
 
-  $class .= ' cmExt';
+  $class .= ' mailChimpExt';
   return $class;
 
 }
