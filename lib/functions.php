@@ -218,7 +218,7 @@ function cme_ext_author_form_class_attr( $class ) {
 add_filter('wpcf7_form_elements', 'cme_ext_author_wpcf7');
 function cme_ext_author_wpcf7($ext_author) {
 
-  $ext_author.= '<div class="wpcf7-display-none">'. "\n";
+  $ext_author .= '<div class="wpcf7-display-none">'. "\n";
   $ext_author .= 'Contact form 7 extended by '. "\n";
   $ext_author .= '<a href="http://renzojohnson.com" title="Web Developer: Renzo Johnson" alt="Web Developer: Renzo Johnson" target="_blank">Renzo Johnson</a>'. "\n";
   $ext_author .= '</div>'. "\n";
