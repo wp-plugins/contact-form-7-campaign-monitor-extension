@@ -3,7 +3,7 @@
 // ini_set("display_errors", 1);
 // the rest of your script...
 
-define( 'WPCF7_SPARTAN_VERSION', '0.1.9' );
+define( 'WPCF7_SPARTAN_VERSION', '0.2.0' );
 
 if ( ! defined( 'WPCF7_SPARTAN_PLUGIN_BASENAME' ) )
 	define( 'WPCF7_SPARTAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
