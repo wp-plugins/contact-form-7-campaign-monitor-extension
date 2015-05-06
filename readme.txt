@@ -1,85 +1,87 @@
-=== Contact Form 7 MailChimp Extension ===
+=== Contact Form 7 Campaign Monitor Extension ===
 Contributors: rnzo
-Donate link: http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension
-Tags: mailchimp, mail chimp, contact, form, contact form, contact form 7, email, mailing list, createsend, mandrill, renzo johnson, cme
+Donate link: http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension
+Tags: campaign monitor, contact, form, contact form, contact form 7, email, mailing list, createsend, renzo johnson, cme
 Requires at least: 3.9
 Tested up to: 4.3
 Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple way to integrate MailChimp mailing lists to Contact Form 7. Save your subscribers in a proper mailing list.
+Simple way to integrate Campaign Monitor mailing lists to Contact Form 7. Save your subscribers in a proper mailing list.
 
 == Description ==
 
-Integrate Contact Form 7 with MailChimp. Automatically add form submissions to predetermined lists in MailChimp, using its latest API. This MailChimp Extension supports multiple mailing lists and API Keys.
+Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissions to predetermined lists in Campaign Monitor, using its latest API. This Campaign Monitor Extension supports multiple mailing lists and API Keys.
 
 
 = Key Features =
 
 * Easy to use
 * Use a different mailing list per contact form
+* Opt-in checkbox
 * Support for custom fields
-* Latest MailChimp API
+* Latest Campaign Monitor API
 * Constantly updated
-
-= Please note*** =
-
-* Support for groups - coming soon
-* Support for segments - coming soon
 
 = Requirements =
 
 1. Self hosted WordPress.org installation (3.9 or higher)
 2. Contact Form 7 (4.0 or higher)
-3. MailChimp account
+3. Campaign Monitor account
+
 
 = Leave a Comment or a Review =
 
-If this plugin is useful to you, please leave a review here: [Extension Review Page](https://wordpress.org/support/view/plugin-reviews/contact-form-7-mailchimp-extension) Or Leave a comment here: [Extension comments page](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
+If this plugin is useful to you, please leave a review here: [Campaign Monitor Extension Review Page](https://wordpress.org/support/view/plugin-reviews/contact-form-7-campaign-monitor-extension) Or Leave a comment here: [Campaign Monitor Extension comments page](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 
 
 
 == Installation ==
 
-1. Upload the entire 'contact-form-7-mail-chimp-extension' folder to the '/wp-content/plugins/' directory.
+1. Upload the entire 'contact-form-7-campaign-monitor-extension' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-You will find 'MailChimp: Subscriber List Details' menu in your Contact Form 7 editor.
+You will find 'Campaign Monitor: Subscriber List Details' menu in your Contact Form 7 editor.
 
-For basic usage, you can also have a look at the [Extension homepage](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension), you can also have a look at the [Contact Form 7 homepage](http://contactform7.com).
+For basic usage, you can also have a look at the [Campaign Monitor Extension homepage](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension), you can also have a look at the [Contact Form 7 homepage](http://contactform7.com/).
 
 == Frequently Asked Questions ==
 
-Do you have questions or issues with Contact Form 7 MailChimp Extension? Use these support channels appropriately.
+Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? Use these support channels appropriately.
 
-1. [Docs](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
-2. [FAQ](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
-3. [Support Forum](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
+1. [Campaign Monitor Extension Docs](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+2. [Campaign Monitor Extension FAQ](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+3. [Campaign Monitor Extension Support Forum](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 
-[Support](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
+[Support](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 
 == Screenshots ==
 
-1. mche-screenshot-1.png
-2. mche-screenshot-2.png
+1. screenshot-1.png
+2. screenshot-2.png
 
 == Changelog ==
 
-For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension).
+For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
 = 0.3.0 =
 
+* Updated readme.txt
+
+= 0.2.9 =
+
 * Added opt-in checkbox
-
-= 0.2.7 =
-
-* Fixed typo
-
-= 0.2.5 =
-
-* Fixed form not submitting when email already subscribed
 
 = 0.1.2 =
 
 * Release version
+
+
+= 0.1.5 =
+
+* Updated documentation
+
+= 0.1.6 =
+
+* Help button added
