@@ -7,7 +7,7 @@ Author: Renzo Johnson
 Author URI: http://renzojohnson.com
 Text Domain: contact-form-7
 Domain Path: /languages/
-Version: 0.2.0
+Version: 0.2.9
 */
 
 /*  Copyright 2013-2014 Renzo Johnson (email: renzojohnson at gmail.com)
@@ -27,6 +27,13 @@ Version: 0.2.0
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'lib/functions.php');
-require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'lib/enqueue.php');
+define( 'SPARTAN_CME_VERSION', '0.2.9' );
 
+define( 'SPARTAN_CME_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+define( 'SPARTAN_CME_PLUGIN_NAME', trim( dirname( SPARTAN_CME_PLUGIN_BASENAME ), '/' ) );
+define( 'SPARTAN_CME_PLUGIN_DIR', untrailingslashit( dirname( __FILE__ ) ) );
+define( 'SPARTAN_CME_PLUGIN_URL', untrailingslashit( plugins_url( '', __FILE__ ) ) );
+define( 'SPARTAN_CME_PLUGIN_MODULES_DIR', SPARTAN_WPLC_PLUGIN_DIR . '/modules' );
+
+require_once( SPARTAN_CME_PLUGIN_DIR . '/lib/functions.php' );
+require_once( SPARTAN_CME_PLUGIN_DIR . '/lib/enqueue.php' );
