@@ -65,6 +65,11 @@ Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? 
 
 For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
+= 0.3.1 =
+
+* Fixed error on line 36
+
+
 = 0.3.0 =
 
 * Updated readme.txt
