@@ -1,31 +1,20 @@
 <?php
-// error_reporting(E_ALL);
-// ini_set("display_errors", 1);
-// the rest of your script...
+/*  Copyright 2013-2015 Renzo Johnson (email: renzojohnson at gmail.com)
 
-function wpcf7_cm_save_campaignmonitor($args) {
-	update_option( 'cf7_cm_'.$args->id, $_POST['wpcf7-campaignmonitor'] );
-}
-add_action( 'wpcf7_after_save', 'wpcf7_cm_save_campaignmonitor' );
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-function add_cm_meta () {
-	if ( wpcf7_admin_has_edit_cap() ) {
-		add_meta_box( 'cf7cmdiv', __( 'Campaign Monitor: Subscriber List Details <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-hand" target="_blank">Need Help?</a>', 'wpcf7' ),
-			'wpcf7_cm_add_campaignmonitor', 'cfseven', 'cf7_cm', 'core',
-			array(
-				'id' => 'wpcf7-cf7',
-				'name' => 'cf7_cm',
-				'use' => __( 'Use Campaign Monitor', 'wpcf7' ) ) );
-	}
-}
-add_action( 'wpcf7_add_meta_boxes', 'add_cm_meta' );
-
-
-function show_cm_metabox($cf) {
-	do_meta_boxes( 'cfseven', 'cf7_cm', $cf );
-}
-add_action( 'wpcf7_admin_after_additional_settings', 'show_cm_metabox' );
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
 
 
 function wpcf7_cm_add_campaignmonitor($args) {
@@ -33,69 +22,68 @@ function wpcf7_cm_add_campaignmonitor($args) {
 	$cf7_cm = get_option( 'cf7_cm_'.$args->id, $cf7_cm_defaults );
 ?>
 
-<div class="mail-fields">
-	<div class="half-left">
-		<div class="mail-field">
+<div class="metabox-holder">
+
+	<div class="cme-main-fields">
+
+		<p>
 			<label for="wpcf7-campaignmonitor-email"><?php echo esc_html( __( 'Subscriber Email:', 'wpcf7' ) ); ?></label><br />
 			<input type="text" id="wpcf7-campaignmonitor-email" name="wpcf7-campaignmonitor[email]" class="wide" size="70" placeholder="[your-email]" value="<?php echo (isset ( $cf7_cm['email'] ) ) ? esc_attr( $cf7_cm['email'] ) : ''; ?>" />
-		</div>
+		</p>
 
-		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-name"><?php echo esc_html( __( 'Subscriber Name:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-name" name="wpcf7-campaignmonitor[name]" class="wide" size="70" placeholder="[your-name]" value="<?php echo (isset ($cf7_cm['name'] ) ) ? esc_attr( $cf7_cm['name'] ) : '' ; ?>" />
-		</div>
 
-		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-accept"><?php echo esc_html( __( 'Required Acceptance Field:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-accept" name="wpcf7-campaignmonitor[accept]" class="wide" size="70" placeholder="[opt-in]" value="<?php echo (isset ($cf7_cm['accept'] ) ) ? esc_attr( $cf7_cm['accept'] ) : '' ; ?>" />
-		</div>
+		<p>
+			<label for="wpcf7-campaignmonitor-name"><?php echo esc_html( __( 'Subscriber Name:', 'wpcf7' ) ); ?></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-name" name="wpcf7-campaignmonitor[name]" class="wide" size="70" placeholder="[your-name]" value="<?php echo (isset ($cf7_cm['name'] ) ) ? esc_attr( $cf7_cm['name'] ) : '' ; ?>" />
+		</p>
 
-		<div class="mail-field"><br/>
-		<input type="checkbox" id="wpcf7-campaignmonitor-cf-active" name="wpcf7-campaignmonitor[cfactive]" value="1"<?php echo ( isset($cf7_cm['cfactive']) ) ? ' checked="checked"' : ''; ?> />
-		<label for="wpcf7-campaignmonitor-cfactive"><?php echo esc_html( __( 'Use Custom Fields', 'wpcf7' ) ); ?></label><br/><br/>
-		</div>
+
+		<p>
+			<label for="wpcf7-campaignmonitor-accept"><?php echo esc_html( __( 'Required Acceptance Field:', 'wpcf7' ) ); ?></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-accept" name="wpcf7-campaignmonitor[accept]" class="wide" size="70" placeholder="[opt-in]" value="<?php echo (isset ($cf7_cm['accept'] ) ) ? esc_attr( $cf7_cm['accept'] ) : '' ; ?>" />
+		</p>
+
+
+		<p>
+			<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" placeholder="512a2673a8fc4e588499e82e2d43680d100a824e8ba55394" value="<?php echo (isset($cf7_cm['api']) ) ? esc_attr( $cf7_cm['api'] ) : ''; ?>" />
+		</p>
+
+
+		<p>
+			<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" placeholder="aadc9ca0b08c83fbb714490354463186" value="<?php echo (isset( $cf7_cm['list']) ) ?  esc_attr( $cf7_cm['list']) : '' ; ?>" />
+		</p>
+
+
+		<p>
+			<input type="checkbox" id="wpcf7-campaignmonitor-resubscribeoption" name="wpcf7-campaignmonitor[resubscribeoption]" value="1"<?php echo ( isset($cf7_cm['resubscribeoption']) ) ? ' checked="checked"' : ''; ?> />
+			<label for="wpcf7-campaignmonitor-resubscribeoption"><?php echo esc_html( __( 'Allow Users to Resubscribe after being Deleted or Unsubscribed? (checked = true)', 'wpcf7' ) ); ?></label>
+		</p>
+
+
+		<p>
+			<input type="checkbox" id="wpcf7-campaignmonitor-cf-active" name="wpcf7-campaignmonitor[cfactive]" value="1"<?php echo ( isset($cf7_cm['cfactive']) ) ? ' checked="checked"' : ''; ?> />
+			<label for="wpcf7-campaignmonitor-cfactive"><?php echo esc_html( __( 'Use Custom Fields', 'wpcf7' ) ); ?></label>
+		</p>
+
 	</div>
-
-	<div class="half-right">
-		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" placeholder="512a2673a8fc4e588499e82e2d43680d100a824e8ba55394" value="<?php echo (isset($cf7_cm['api']) ) ? esc_attr( $cf7_cm['api'] ) : ''; ?>" />
-		</div>
-
-		<div class="mail-field">
-		<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?></label><br />
-		<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" placeholder="aadc9ca0b08c83fbb714490354463186" value="<?php echo (isset( $cf7_cm['list']) ) ?  esc_attr( $cf7_cm['list']) : '' ; ?>" />
-		</div>
-
-		<div class="mail-field"><br/>
-		<input type="checkbox" id="wpcf7-campaignmonitor-resubscribeoption" name="wpcf7-campaignmonitor[resubscribeoption]" value="1"<?php echo ( isset($cf7_cm['resubscribeoption']) ) ? ' checked="checked"' : ''; ?> />
-		<label for="wpcf7-campaignmonitor-resubscribeoption"><?php echo esc_html( __( 'Allow Users to Resubscribe after being Deleted or Unsubscribed? (checked = true)', 'wpcf7' ) ); ?></label><br/><br/>
-		</div>
-	</div>
-
-	<br class="clear" />
 
 	<div class="campaignmonitor-custom-fields">
 
 		<?php for($i=1;$i<=6;$i++){ ?>
-			<div class="half-left">
 
-				<div class="mail-field">
+		<div class="col-6">
 				<label for="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>"><?php echo esc_html( __( 'Contact Form Value '.$i.':', 'wpcf7' ) ); ?></label><br />
 				<input type="text" id="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomValue<?php echo $i; ?>]" class="wide" size="70" placeholder="[your-example-value]" value="<?php echo esc_attr( $cf7_cm['CustomValue'.$i] ); ?>" />
-				</div>
+		</div>
 
-			</div>
 
-			<div class="half-right">
+		<div class="col-6">
+			<label for="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>"><?php echo esc_html( __( 'Campaignmonitor Custom Field Name '.$i.':', 'wpcf7' ) ); ?></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomKey<?php echo $i; ?>]" class="wide" size="70" placeholder="example-field" value="<?php echo esc_attr( $cf7_cm['CustomKey'.$i] ); ?>" />
+		</div>
 
-				<div class="mail-field">
-				<label for="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>"><?php echo esc_html( __( 'Campaignmonitor Custom Field Name '.$i.':', 'wpcf7' ) ); ?></label><br />
-				<input type="text" id="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomKey<?php echo $i; ?>]" class="wide" size="70" placeholder="example-field" value="<?php echo esc_attr( $cf7_cm['CustomKey'.$i] ); ?>" />
-				</div>
-
-			</div>
-			<br class="clear" />
 		<?php } ?>
 
 	</div>
@@ -106,10 +94,35 @@ function wpcf7_cm_add_campaignmonitor($args) {
 }
 
 
-add_action( 'wpcf7_before_send_mail', 'wpcf7_cm_subscribe' );
+function wpcf7_cm_save_campaignmonitor($args) {
 
-function wpcf7_cm_subscribe($obj)
-{
+	update_option( 'cf7_cm_'.$args->id, $_POST['wpcf7-campaignmonitor'] );
+
+}
+add_action( 'wpcf7_after_save', 'wpcf7_cm_save_campaignmonitor' );
+
+
+
+function show_cm_metabox ( $panels ) {
+
+	$new_page = array(
+		'cme-Extension' => array(
+			'title' => __( 'Camp Monitor Extension', 'contact-form-7' ),
+			'callback' => 'wpcf7_cm_add_campaignmonitor'
+		)
+	);
+
+	$panels = array_merge($panels, $new_page);
+
+	return $panels;
+
+}
+add_filter( 'wpcf7_editor_panels', 'show_cm_metabox' );
+
+
+
+function wpcf7_cm_subscribe($obj) {
+
 	$cf7_cm = get_option( 'cf7_cm_'.$obj->id() );
 	$submission = WPCF7_Submission::get_instance();
 
@@ -179,6 +192,9 @@ function wpcf7_cm_subscribe($obj)
 
 	}
 }
+add_action( 'wpcf7_before_send_mail', 'wpcf7_cm_subscribe' );
+
+
 
 function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 	if( preg_match($pattern,$subject,$matches) > 0)
@@ -211,16 +227,17 @@ function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 }
 
 
-add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
+
 function cme_ext_author_form_class_attr( $class ) {
 
   $class .= ' cMonitor-ext-' . SPARTAN_CME_VERSION;
   return $class;
 
 }
+add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
 
 
-add_filter('wpcf7_form_elements', 'cme_ext_author_wpcf7');
+
 function cme_ext_author_wpcf7($cme_author) {
 
 	$author_pre = 'Contact form 7 Campaignmonitor extension by ';
@@ -241,4 +258,4 @@ function cme_ext_author_wpcf7($cme_author) {
   return $cme_author;
 
 }
-
+add_filter('wpcf7_form_elements', 'cme_ext_author_wpcf7');

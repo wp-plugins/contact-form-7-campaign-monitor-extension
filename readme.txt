@@ -27,7 +27,7 @@ Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissio
 = Requirements =
 
 1. Self hosted WordPress.org installation (3.9 or higher)
-2. Contact Form 7 (4.0 or higher)
+2. Contact Form 7 (4.2 or higher)
 3. Campaign Monitor account
 
 
@@ -64,6 +64,10 @@ Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? 
 == Changelog ==
 
 For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
+
+= 0.3.2 =
+
+* Hotfix to work with the new CF7 editor panels
 
 = 0.3.1 =
 
