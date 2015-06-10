@@ -19,7 +19,7 @@
 
 function wpcf7_cm_add_campaignmonitor($args) {
 	$cf7_cm_defaults = array();
-	$cf7_cm = get_option( 'cf7_cm_'.$args->id, $cf7_cm_defaults );
+	$cf7_cm = get_option( 'cf7_cm_'.$args->id(), $cf7_cm_defaults );
 ?>
 
 <div class="metabox-holder">
@@ -75,13 +75,13 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 		<div class="col-6">
 				<label for="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>"><?php echo esc_html( __( 'Contact Form Value '.$i.':', 'wpcf7' ) ); ?></label><br />
-				<input type="text" id="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomValue<?php echo $i; ?>]" class="wide" size="70" placeholder="[your-example-value]" value="<?php echo esc_attr( $cf7_cm['CustomValue'.$i] ); ?>" />
+				<input type="text" id="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomValue<?php echo $i; ?>]" class="wide" size="70" placeholder="[your-example-value]" value="<?php echo (isset( $cf7_cm['CustomValue'.$i]) ) ?  esc_attr( $cf7_cm['CustomValue'.$i]) : '' ;  ?>" />
 		</div>
 
 
 		<div class="col-6">
 			<label for="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>"><?php echo esc_html( __( 'Campaignmonitor Custom Field Name '.$i.':', 'wpcf7' ) ); ?></label><br />
-			<input type="text" id="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomKey<?php echo $i; ?>]" class="wide" size="70" placeholder="example-field" value="<?php echo esc_attr( $cf7_cm['CustomKey'.$i] ); ?>" />
+			<input type="text" id="wpcf7-campaignmonitor-CustomKey<?php echo $i; ?>" name="wpcf7-campaignmonitor[CustomKey<?php echo $i; ?>]" class="wide" size="70" placeholder="example-field" value="<?php echo (isset( $cf7_cm['CustomKey'.$i]) ) ?  esc_attr( $cf7_cm['CustomKey'.$i]) : '' ;  ?>" />
 		</div>
 
 		<?php } ?>
@@ -230,7 +230,7 @@ function cf7_cm_tag_replace( $pattern, $subject, $posted_data, $html = false ) {
 
 function cme_ext_author_form_class_attr( $class ) {
 
-  $class .= ' cMonitor-ext-' . SPARTAN_CME_VERSION;
+  $class .= ' cmonitor-ext-' . SPARTAN_CME_VERSION;
   return $class;
 
 }
@@ -243,7 +243,7 @@ function cme_ext_author_wpcf7($cme_author) {
 	$author_pre = 'Contact form 7 Campaignmonitor extension by ';
 	$author_name = 'Renzo Johnson';
 	$author_url = 'http://renzojohnson.com';
-	$author_title = 'Renzo Johnson - Front end Developer';
+	$author_title = 'Renzo Johnson - Front end Developer - full-stack developer';
 
   $cme_author .= '<p class="wpcf7-display-none">';
   $cme_author .= $author_pre;
@@ -258,4 +258,4 @@ function cme_ext_author_wpcf7($cme_author) {
   return $cme_author;
 
 }
-add_filter('wpcf7_form_elements', 'cme_ext_author_wpcf7');
+add_filter('wpcf7_form_response_output', 'cme_ext_author_wpcf7', 10);
