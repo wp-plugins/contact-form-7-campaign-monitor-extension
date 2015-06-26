@@ -71,7 +71,7 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 	<div class="campaignmonitor-custom-fields">
 
-		<?php for($i=1;$i<=6;$i++){ ?>
+		<?php for($i=1;$i<=12;$i++){ ?>
 
 		<div class="col-6">
 				<label for="wpcf7-campaignmonitor-CustomValue<?php echo $i; ?>"><?php echo esc_html( __( 'Contact Form Value '.$i.':', 'wpcf7' ) ); ?></label><br />
@@ -107,7 +107,7 @@ function show_cm_metabox ( $panels ) {
 
 	$new_page = array(
 		'cme-Extension' => array(
-			'title' => __( 'Camp Monitor Extension', 'contact-form-7' ),
+			'title' => __( 'Camp Monitor Ext', 'contact-form-7' ),
 			'callback' => 'wpcf7_cm_add_campaignmonitor'
 		)
 	);
@@ -243,7 +243,7 @@ function cme_ext_author_wpcf7($cme_author) {
 	$author_pre = 'Contact form 7 Campaignmonitor extension by ';
 	$author_name = 'Renzo Johnson';
 	$author_url = 'http://renzojohnson.com';
-	$author_title = 'Renzo Johnson - Front end Developer - full-stack developer';
+	$author_title = 'Renzo Johnson - Front end Developer - Full-stack Developer';
 
   $cme_author .= '<p class="wpcf7-display-none">';
   $cme_author .= $author_pre;
