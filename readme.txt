@@ -65,6 +65,10 @@ Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? 
 
 For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
+= 0.3.6 =
+
+* Added more custom fields
+
 = 0.3.2 =
 
 * Hotfix to work with the new CF7 editor panels
