@@ -7,10 +7,10 @@ Author: Renzo Johnson
 Author URI: http://renzojohnson.com
 Text Domain: contact-form-7
 Domain Path: /languages/
-Version: 0.3.7
+Version: 0.3.8
 */
 
-/*  Copyright 2013-2014 Renzo Johnson (email: renzojohnson at gmail.com)
+/*  Copyright 2013-2015 Renzo Johnson (email: renzojohnson at gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ Version: 0.3.7
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-define( 'SPARTAN_CME_VERSION', '0.3.7' );
+define( 'SPARTAN_CME_VERSION', '0.3.8' );
 
 define( 'SPARTAN_CME_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'SPARTAN_CME_PLUGIN_NAME', trim( dirname( SPARTAN_CME_PLUGIN_BASENAME ), '/' ) );
