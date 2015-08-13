@@ -238,24 +238,3 @@ add_filter( 'wpcf7_form_class_attr', 'cme_ext_author_form_class_attr' );
 
 
 
-function cme_ext_author_wpcf7($cme_author) {
-
-	$author_pre = 'Contact form 7 Campaignmonitor extension by ';
-	$author_name = 'Renzo Johnson';
-	$author_url = 'http://renzojohnson.com';
-	$author_title = 'Renzo Johnson - Web Developer - Orlando Front end Developer - Full Stack Developer - contact form 7 - contact form 7 mailchimp - mailchimp for Wordress';
-
-  $cme_author .= '<p class="wpcf7-display-none">';
-  $cme_author .= $author_pre;
-  $cme_author .= '<a href="'.$author_url.'" ';
-  $cme_author .= 'title="'.$author_title.'" ';
-  $cme_author .= 'alt="'.$author_title.'" ';
-  $cme_author .= 'target="_blank">';
-  $cme_author .= ''.$author_title.'';
-  $cme_author .= '</a>';
-  $cme_author .= '</p>'. "\n";
-
-  return $cme_author;
-
-}
-add_filter('wpcf7_form_response_output', 'cme_ext_author_wpcf7', 10);
