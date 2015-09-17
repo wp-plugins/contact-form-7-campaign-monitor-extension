@@ -42,5 +42,29 @@ a.helping-field:hover {
 }
 
 .campaignmonitor-custom-fields .col-6 input {
-	max-width: 95%
+	max-width: 95%;
+}
+
+li#cme-Extension-tab {
+	border-top: 1px solid #01b7ff;
+	background: rgba(255, 255, 255, 0.5) url('../images/postal-marks.png') center top no-repeat;
+}
+
+.p-hr {
+	margin-top: 4rem;
+	height: 12px;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.2);
+}
+
+.p-author {
+	font-size: 12px;
+	color: #444;
+	padding: 1rem 1.5rem;
+}
+
+.p-author a {
+	text-decoration: none;
+	/*color: #333;*/
 }

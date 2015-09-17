@@ -96,8 +96,9 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 function wpcf7_cm_save_campaignmonitor($args) {
 
-	update_option( 'cf7_cm_'.$args->id, $_POST['wpcf7-campaignmonitor'] );
-
+	if(!empty($_POST)){
+		update_option( 'cf7_cm_'.$args->id, $_POST['wpcf7-campaignmonitor'] );
+	}
 }
 add_action( 'wpcf7_after_save', 'wpcf7_cm_save_campaignmonitor' );
 
