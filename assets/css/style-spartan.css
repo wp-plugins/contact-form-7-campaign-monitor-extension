@@ -60,8 +60,9 @@ li#cme-Extension-tab {
 
 .p-author {
 	font-size: 12px;
-	color: #444;
+	color: #555;
 	padding: 1rem 1.5rem;
+	opacity: .9;
 }
 
 .p-author a {
