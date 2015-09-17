@@ -112,7 +112,7 @@ function show_cm_metabox ( $panels ) {
 
 	$new_page = array(
 		'cme-Extension' => array(
-			'title' => __( 'Camp Monitor Ext', 'contact-form-7' ),
+			'title' => __( 'Campaign Monitor', 'contact-form-7' ),
 			'callback' => 'wpcf7_cm_add_campaignmonitor'
 		)
 	);
