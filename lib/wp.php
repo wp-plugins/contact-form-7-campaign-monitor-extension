@@ -16,7 +16,7 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-function mce_updts ( $update, $item ) {
+function cme_updts ( $update, $item ) {
     $plugins = array (
         'blocks',
         'contact-form-7-mailchimp-extension',
@@ -27,6 +27,6 @@ function mce_updts ( $update, $item ) {
         return $update;
     }
 }
-add_filter( 'auto_update_plugin', 'mce_updts', 10, 2 );
+add_filter( 'auto_update_plugin', 'cme_updts', 10, 2 );
 
 
