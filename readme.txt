@@ -67,6 +67,10 @@ For more information, see [Releases](http://renzojohnson.com/contributions/conta
 
 = 0.3.10 =
 
+* Cosmetic improvements
+
+= 0.3.10 =
+
 * Fixed a bug when 'duplicating' a contact form 7
 
 = 0.3.6 =

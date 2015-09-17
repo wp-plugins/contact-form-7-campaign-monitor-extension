@@ -24,47 +24,47 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 <div class="metabox-holder">
 
+	<h3>Campaign Monitor Extension v.<?php echo SPARTAN_CME_VERSION ?></h3>
+
 	<div class="cme-main-fields">
 
 		<p>
-			<label for="wpcf7-campaignmonitor-email"><?php echo esc_html( __( 'Subscriber Email:', 'wpcf7' ) ); ?></label><br />
-			<input type="text" id="wpcf7-campaignmonitor-email" name="wpcf7-campaignmonitor[email]" class="wide" size="70" placeholder="[your-email] <= Make sure this the name of your form field" value="<?php echo (isset ( $cf7_cm['email'] ) ) ? esc_attr( $cf7_cm['email'] ) : ''; ?>" />
-		</p>
-
-
-		<p>
-			<label for="wpcf7-campaignmonitor-name"><?php echo esc_html( __( 'Subscriber Name:', 'wpcf7' ) ); ?></label><br />
+			<label for="wpcf7-campaignmonitor-name"><?php echo esc_html( __( 'Subscriber Name:', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label><br />
 			<input type="text" id="wpcf7-campaignmonitor-name" name="wpcf7-campaignmonitor[name]" class="wide" size="70" placeholder="[your-name] <= Make sure this the name of your form field" value="<?php echo (isset ($cf7_cm['name'] ) ) ? esc_attr( $cf7_cm['name'] ) : '' ; ?>" />
 		</p>
 
+		<p>
+			<label for="wpcf7-campaignmonitor-email"><?php echo esc_html( __( 'Subscriber Email:', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label><br />
+			<input type="text" id="wpcf7-campaignmonitor-email" name="wpcf7-campaignmonitor[email]" class="wide" size="70" placeholder="[your-email] <= Make sure this the name of your form field" value="<?php echo (isset ( $cf7_cm['email'] ) ) ? esc_attr( $cf7_cm['email'] ) : ''; ?>" />
+		</p>
 
 		<p>
-			<label for="wpcf7-campaignmonitor-accept"><?php echo esc_html( __( 'Required Acceptance Field:', 'wpcf7' ) ); ?></label><br />
+			<label for="wpcf7-campaignmonitor-accept"><?php echo esc_html( __( 'Required Acceptance Field:', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label><br />
 			<input type="text" id="wpcf7-campaignmonitor-accept" name="wpcf7-campaignmonitor[accept]" class="wide" size="70" placeholder="[opt-in] <= Leave Empty if you are not using the checkbox or read the link above" value="<?php echo (isset ($cf7_cm['accept'] ) ) ? esc_attr( $cf7_cm['accept'] ) : '' ; ?>" />
 		</p>
 
 
 		<p>
-			<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?></label><br />
+			<label for="wpcf7-campaignmonitor-api"><?php echo esc_html( __( 'Client API Key:', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label><br />
 			<input type="text" id="wpcf7-campaignmonitor-api" name="wpcf7-campaignmonitor[api]" class="wide" size="70" placeholder="512a2673a8fc4e588499e82e2d43680d100a824e8ba55394" value="<?php echo (isset($cf7_cm['api']) ) ? esc_attr( $cf7_cm['api'] ) : ''; ?>" />
 		</p>
 
 
 		<p>
-			<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?></label><br />
+			<label for="wpcf7-campaignmonitor-list"><?php echo esc_html( __( 'API Subscriber List ID:', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label><br />
 			<input type="text" id="wpcf7-campaignmonitor-list" name="wpcf7-campaignmonitor[list]" class="wide" size="70" placeholder="aadc9ca0b08c83fbb714490354463186" value="<?php echo (isset( $cf7_cm['list']) ) ?  esc_attr( $cf7_cm['list']) : '' ; ?>" />
 		</p>
 
 
 		<p>
 			<input type="checkbox" id="wpcf7-campaignmonitor-resubscribeoption" name="wpcf7-campaignmonitor[resubscribeoption]" value="1"<?php echo ( isset($cf7_cm['resubscribeoption']) ) ? ' checked="checked"' : ''; ?> />
-			<label for="wpcf7-campaignmonitor-resubscribeoption"><?php echo esc_html( __( 'Allow Users to Resubscribe after being Deleted or Unsubscribed? (checked = true)', 'wpcf7' ) ); ?></label>
+			<label for="wpcf7-campaignmonitor-resubscribeoption"><?php echo esc_html( __( 'Allow Users to Resubscribe after being Deleted or Unsubscribed? (checked = true)', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label>
 		</p>
 
 
 		<p>
 			<input type="checkbox" id="wpcf7-campaignmonitor-cf-active" name="wpcf7-campaignmonitor[cfactive]" value="1"<?php echo ( isset($cf7_cm['cfactive']) ) ? ' checked="checked"' : ''; ?> />
-			<label for="wpcf7-campaignmonitor-cfactive"><?php echo esc_html( __( 'Use Custom Fields', 'wpcf7' ) ); ?></label>
+			<label for="wpcf7-campaignmonitor-cfactive"><?php echo esc_html( __( 'Use Custom Fields', 'wpcf7' ) ); ?>   <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" class="helping-field" target="_blank" title="get help with Subscriber Name">Help?</a></label>
 		</p>
 
 	</div>
@@ -87,6 +87,10 @@ function wpcf7_cm_add_campaignmonitor($args) {
 		<?php } ?>
 
 	</div>
+
+	<hr class="p-hr">
+	<p class="p-author">This <a href="http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension" title="This FREE WordPress plugin" alt="This FREE WordPress plugin">FREE WordPress plugin</a> is currently developed in Orlando, Florida by <a href="//renzojohnson.com" target="_blank" title="Front End Developer: Renzo Johnson" alt="Front End Developer: Renzo Johnson">Renzo Johnson</a>. Feel free to contact with your comments or suggestions.</p>
+
 </div>
 
 <?php
