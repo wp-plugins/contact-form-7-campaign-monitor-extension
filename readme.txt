@@ -39,7 +39,7 @@ If this plugin is useful to you, please leave a review here: [Campaign Monitor E
 
 == Installation ==
 
-1. Upload the entire 'contact-form-7-campaign-monitor-extension' folder to the '/wp-content/plugins/' directory.
+1. Upload the entire '[contact-form-7-campaign-monitor-extension](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 You will find 'Campaign Monitor: Subscriber List Details' menu in your Contact Form 7 editor.
@@ -52,9 +52,9 @@ Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? 
 
 1. [Campaign Monitor Extension Docs](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 2. [Campaign Monitor Extension FAQ](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-3. [Campaign Monitor Extension Support Forum](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-
-[Support](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+3. [Campaignmonitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+4. [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+5. Contact the [Web Developer](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
 
 == Screenshots ==
 
@@ -84,25 +84,3 @@ For more information, see [Releases](http://renzojohnson.com/contributions/conta
 = 0.3.1 =
 
 * Fixed error on line 36
-
-
-= 0.3.0 =
-
-* Updated readme.txt
-
-= 0.2.9 =
-
-* Added opt-in checkbox
-
-= 0.1.2 =
-
-* Release version
-
-
-= 0.1.5 =
-
-* Updated documentation
-
-= 0.1.6 =
-
-* Help button added
