@@ -44,17 +44,18 @@ If this plugin is useful to you, please leave a review here: [Campaign Monitor E
 
 You will find 'Campaign Monitor: Subscriber List Details' menu in your Contact Form 7 editor.
 
-For basic usage, you can also have a look at the [Campaign Monitor Extension homepage](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension), you can also have a look at the [Contact Form 7 homepage](http://contactform7.com/).
+For basic usage, you can also have a look at the [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) Extension homepage, you can also have a look at the [Contact Form 7](http://contactform7.com/) homepage.
 
 == Frequently Asked Questions ==
 
 Do you have questions or issues with Contact Form 7 Campaign Monitor Extension? Use these support channels appropriately.
 
-1. [Campaign Monitor Extension Docs](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-2. [Campaign Monitor Extension FAQ](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-3. [Campaignmonitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-4. [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
-5. Contact the [Web Developer](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension)
+1. [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) Extension Docs.
+2. [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) Extension FAQ.
+4. [Campaignmonitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) API Key.
+4. [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) List ID.
+3. [Campaignmonitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension/campaign-monitor-opt-in-checkbox) Opt-in.
+5. Contact the [Web Developer](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
 == Screenshots ==
 
