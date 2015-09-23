@@ -33,7 +33,7 @@ Integrate Contact Form 7 with Campaign Monitor. Automatically add form submissio
 
 = Leave a Comment or a Review =
 
-If this plugin is useful to you, please leave a review here: [Campaign Monitor Extension Review Page](https://wordpress.org/support/view/plugin-reviews/contact-form-7-campaign-monitor-extension) Or Leave a comment here: [Campaign Monitor](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension) Extension comments page.
+If this plugin is useful to you, please leave a review here: [Campaign Monitor Extension Review Page](https://wordpress.org/support/view/plugin-reviews/contact-form-7-campaign-monitor-extension) Or contact the [Web Developer](http://renzojohnson.com/contributions/contact-form-7-campaign-monitor-extension).
 
 
 
