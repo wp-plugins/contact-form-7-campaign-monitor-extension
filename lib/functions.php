@@ -93,7 +93,7 @@ function wpcf7_cm_add_campaignmonitor($args) {
 
 		<p class="p-author">This <a href="<?php echo CME_AUTH ?>" title="This FREE WordPress plugin" alt="This FREE WordPress plugin">FREE WordPress plugin</a> is currently developed in Orlando, Florida by <a href="<?php echo CME_AUTH ?>" target="_blank" title="Front End Developer: Renzo Johnson" alt="Front End Developer: Renzo Johnson">Renzo Johnson</a>. Feel free to contact with your comments or suggestions.</p>
 
-		<p class="p-author"><button type="button" aria-expanded="false" class="cme-trigger a-support ">Show Your Support</button></p>
+		<p class="p-author"><a type="button" aria-expanded="false" class="cme-trigger a-support ">Show Your Support</a></p>
 
 	</div>
 
