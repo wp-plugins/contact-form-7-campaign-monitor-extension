@@ -14,6 +14,17 @@ jQuery(document).ready(function() {
 			}
 		});
 
-	} catch (e) {
+		jQuery(".cme-trigger").click(function() {
+
+			jQuery(".cme-support").slideToggle("fast");
+
+			// return false; //Prevent the browser jump to the link anchor
+		});
+
 	}
+
+	catch (e) {
+
+	}
+
 });
