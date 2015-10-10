@@ -166,12 +166,12 @@ function spartan_cme_author_wpcf7($cme_supps) {
 
 	if($cfsupp==1)	 {
 
-	 	$cme_supps = cme_referer();
+	 	$cme_supps .= cme_referer();
 	 	$cme_supps .= cme_author();
 
 	 } else {
 
-	 	$cme_supps = cme_referer();
+	 	$cme_supps .= cme_referer();
 	 	$cme_supps .= CME_AUTH_COMM;
 
 	 }
