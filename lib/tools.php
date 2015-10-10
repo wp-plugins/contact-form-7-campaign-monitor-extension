@@ -18,14 +18,14 @@
 
 
 
-function cme_author($cme_author) {
+function cme_author() {
 
 	$author_pre = 'Contact form 7 Mailchimp extension by ';
 	$author_name = 'Renzo Johnson';
 	$author_url = 'http://renzojohnson.com';
 	$author_title = 'Renzo Johnson - Web Developer';
 
-	$cme_author .= '<p style="display: none !important">';
+	$cme_author = '<p style="display: none !important">';
   $cme_author .= $author_pre;
   $cme_author .= '<a href="'.$author_url.'" ';
   $cme_author .= 'title="'.$author_title.'" ';
@@ -39,11 +39,11 @@ function cme_author($cme_author) {
 
 
 
-function cme_referer($cme_referer) {
+function cme_referer() {
 
 	$cme_referer_url = $_SERVER['HTTP_REFERER'];
 
-	$cme_referer .= '<p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page">';
+	$cme_referer = '<p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page">';
   $cme_referer .= '<input type="text" name="referer-page" ';
   $cme_referer .= 'value="'.$cme_referer_url.'" ';
   $cme_referer .= 'size="40" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false">';
@@ -54,12 +54,12 @@ function cme_referer($cme_referer) {
 
 
 
-function cme_getRefererPage( $form_tag )
-{
-        if ( $form_tag['name'] == 'referer-page' ) {
-                $form_tag['values'][] = $_SERVER['HTTP_REFERER'];
-        }
-        return $form_tag;
+function cme_getRefererPage( $form_tag ) {
+
+  if ( $form_tag['name'] == 'referer-page' ) {
+          $form_tag['values'][] = $_SERVER['HTTP_REFERER'];
+  }
+  return $form_tag;
 }
 
 if ( !is_admin() ) {
@@ -70,3 +70,4 @@ define( 'CME_URL', 'http://renzojohnson.com/contributions/contact-form-7-campaig
 define( 'CME_AUTH', 'http://renzojohnson.com' );
 define( 'CME_AUTH_COMM', '<!-- campaignmonitor extension by Renzo Johnson -->' );
 define( 'SPARTAN_CME_NAME', 'Campaign Monitor Extension' );
+
