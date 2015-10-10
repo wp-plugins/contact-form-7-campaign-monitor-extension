@@ -31,8 +31,9 @@
 }
 
 .helping-hand:hover,
-.helping-field:hover {
-	// text-decoration: underline;
+.helping-field:hover,
+.helping-field:hover .red-icon:before {
+	color: #444;
 }
 
 .red-icon {
