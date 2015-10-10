@@ -24,16 +24,16 @@ function cme_error() {
     $cme_error_out = '<div class="error" id="messages"><p>';
     $cme_error_out .= __('The Contact Form 7 plugin must be installed for the <b>Campaign Monitor Extension</b> to work. <b><a href="'.admin_url('plugin-install.php?tab=plugin-information&plugin=contact-form-7&from=plugins&TB_iframe=true&width=600&height=550').'" class="thickbox" title="Contact Form 7">Install Contact Form 7  Now.</a></b>', 'cme_error');
     $cme_error_out .= '</p></div>';
+    echo $cme_error_out;
 
   } else if ( !class_exists( 'WPCF7') ) {
 
     $cme_error_out = '<div class="error" id="messages"><p>';
     $cme_error_out .= __('The Contact Form 7 is installed, but <strong>you must activate Contact Form 7</strong> below for the <b>Campaign Monitor Extension</b> to work.','cme_error');
     $cme_error_out .= '</p></div>';
+    echo $cme_error_out;
 
   }
-
-  echo $cme_error_out;
 
 }
 add_action('admin_notices', 'cme_error');
