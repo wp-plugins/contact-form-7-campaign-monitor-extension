@@ -41,7 +41,17 @@ function cme_author() {
 
 function cme_referer() {
 
-	$cme_referer_url = $_SERVER['HTTP_REFERER'];
+  // $cme_referer_url = $THE_REFER=strval(isset($_SERVER['HTTP_REFERER']));
+
+  if(isset($_SERVER['HTTP_REFERER'])) {
+
+    $cme_referer_url = $_SERVER['HTTP_REFERER'];
+
+  } else {
+
+    $cme_referer_url = 'direct visit';
+
+  }
 
 	$cme_referer = '<p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page">';
   $cme_referer .= '<input type="text" name="referer-page" ';
